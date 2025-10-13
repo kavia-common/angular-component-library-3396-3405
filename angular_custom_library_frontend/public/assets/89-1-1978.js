@@ -1,16 +1,21 @@
-/**
- * Screen 89 JavaScript (figma id 1:1978)
- * Static rendition. No dynamic behavior required.
- */
-
-(function(){
+(function () {
+  "use strict";
   // PUBLIC_INTERFACE
-  function initScreen89(){
-    /** Initialize any lightweight enhancements if needed (none for static rendition). */
-    const root = document.querySelector('.screen-89');
-    if(!root) return;
-    // Placeholder for potential future interactions without altering static fidelity.
+  function initScreen89() {
+    /** Initialize any static behaviors or future interactions for screen 89. */
+    // Currently no dynamic behavior required for the static replica.
+    const backArea = document.getElementById("rect-1-2065");
+    if (backArea) {
+      backArea.style.cursor = "pointer";
+      backArea.addEventListener("mouseenter", () => (backArea.style.background = "#f3f4f6"));
+      backArea.addEventListener("mouseleave", () => (backArea.style.background = "transparent"));
+    }
   }
 
-  document.addEventListener('DOMContentLoaded', initScreen89);
+  // Initialize when DOM ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initScreen89);
+  } else {
+    initScreen89();
+  }
 })();
