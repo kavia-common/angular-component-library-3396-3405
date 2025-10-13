@@ -1,20 +1,18 @@
 import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
-  stories: [
-    '../projects/**/*.stories.@(js|jsx|ts|tsx|mdx)'
+  "stories": [
+    "../src/**/*.mdx",
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
-  addons: [
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions'
+  "addons": [
+    "@storybook/addon-essentials",
+    "@storybook/addon-onboarding",
+    "@storybook/addon-interactions"
   ],
-  framework: {
-    name: '@storybook/angular',
-    options: {}
-  },
-  docs: {
-    autodocs: 'tag',
-  },
+  "framework": {
+    "name": "@storybook/angular",
+    "options": {}
+  }
 };
-
 export default config;
