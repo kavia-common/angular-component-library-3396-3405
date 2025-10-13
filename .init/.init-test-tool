@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/angular-component-library-3396-3405/angular_custom_library_frontend"
+}
