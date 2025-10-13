@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:angular": "node dist/angular/server/server.mjs",
-    "storybook": "SB_NO_OPEN=1 NODE_ENV=development ng run angular:storybook --port 6006",
+    "storybook": "SB_NO_OPEN=1 NODE_ENV=development ng run angular:storybook --port 6010",
     "build-storybook": "NODE_ENV=production storybook build"
   },
   "private": true,
