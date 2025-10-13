@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import type { Event as DomEvent } from '@angular/core';
 
 @Component({
   selector: 'storybook-button',
@@ -39,7 +38,7 @@ export class ButtonComponent {
 
   /** Optional click handler */
   @Output()
-  onClick = new EventEmitter<DomEvent>();
+  onClick = new EventEmitter<unknown>();
 
   public get classes(): string[] {
     const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';

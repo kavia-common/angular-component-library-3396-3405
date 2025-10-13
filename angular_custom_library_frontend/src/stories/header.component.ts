@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import type { Event as DomEvent } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ButtonComponent } from './button.component';
@@ -67,11 +66,11 @@ export class HeaderComponent {
   user: User | null = null;
 
   @Output()
-  onLogin = new EventEmitter<DomEvent>();
+  onLogin = new EventEmitter<unknown>();
 
   @Output()
-  onLogout = new EventEmitter<DomEvent>();
+  onLogout = new EventEmitter<unknown>();
 
   @Output()
-  onCreateAccount = new EventEmitter<DomEvent>();
+  onCreateAccount = new EventEmitter<unknown>();
 }
